@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="566.0" prefWidth="994.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.company.controller.TableViewController">
+   <children>
+      <TextField fx:id="txtSearch" layoutX="14.0" layoutY="14.0" promptText="Поиск" />
+      <TableView fx:id="tableProduct" layoutX="14.0" layoutY="242.0" prefHeight="310.0" prefWidth="966.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="240.0">
+        <columns>
+          <TableColumn fx:id="columnName" prefWidth="75.0" text="Название товара" />
+          <TableColumn fx:id="columnCost" prefWidth="75.0" text="Стоимость товара" />
+            <TableColumn fx:id="columnIsActive" prefWidth="75.0" text="Активнность" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ComboBox fx:id="comboIsActive" layoutX="185.0" layoutY="14.0" prefWidth="150.0" promptText="Состояние" />
+      <Label fx:id="lblSize" layoutX="14.0" layoutY="209.0" prefHeight="25.0" prefWidth="317.0" />
+   </children>
+</AnchorPane>
